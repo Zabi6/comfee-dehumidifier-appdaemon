@@ -1,0 +1,31 @@
+# Example Lovelace cards for a "sections" view (Home Assistant 2026.x+).
+# Paste this list under a section's `cards:` key, or adapt for a masonry view.
+# Adjust entity IDs if you named your helpers differently.
+
+- type: heading
+  heading: "💧 Comfee Lüfter (Entfeuchter)"
+  heading_style: title
+  icon: mdi:air-filter
+
+- type: entities
+  title: Entfeuchter
+  entities:
+    - entity: binary_sensor.comfee_luefter_laeuft
+      name: Läuft
+    - entity: sensor.comfee_luefter_luftfeuchte
+      name: Luftfeuchte aktuell
+    - entity: binary_sensor.comfee_luefter_tank_voll
+      name: Tank voll
+    - entity: sensor.comfee_luefter_stufe_ist
+      name: Lüfterstufe (Gerät)
+    - type: divider
+    - entity: input_boolean.comfee_lufter_betrieb
+      name: Ein/Aus
+    - entity: input_number.comfee_lufter_zielfeuchte
+      name: Zielfeuchte
+    - entity: input_number.comfee_lufter_stufe
+      name: Lüfterstufe (Soll)
+    - entity: sensor.comfee_luefter_modus_ist
+      name: Modus (Rohwert Gerät)
+    - entity: input_select.comfee_lufter_modus
+      name: Modus wählen
