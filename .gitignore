@@ -1,0 +1,4 @@
+secrets.yaml
+apps.yaml
+*.pyc
+__pycache__/
