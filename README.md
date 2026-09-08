@@ -32,6 +32,8 @@ project works around it by calling the library's Python API directly
 
 ## What you get
 
+![Dashboard card showing the Comfee dehumidifier status and controls](docs/dashboard-card.png)
+
 - `sensor.comfee_luefter_luftfeuchte` — current humidity
 - `sensor.comfee_luefter_zielfeuchte_ist` — target humidity (as reported by device)
 - `sensor.comfee_luefter_stufe_ist` — fan speed (as reported by device)
@@ -42,6 +44,9 @@ project works around it by calling the library's Python API directly
   `input_number.comfee_lufter_zielfeuchte` (target humidity),
   `input_number.comfee_lufter_stufe` (fan speed), and
   `input_select.comfee_lufter_modus` (operating mode)
+
+A ready-to-paste Lovelace card definition is in
+[`docs/dashboard-card.yaml`](docs/dashboard-card.yaml).
 
 ## Requirements
 
