@@ -1,0 +1,11 @@
+comfee_dehumidifier:
+  module: comfee_dehumidifier
+  class: ComfeeDehumidifier
+  device_id: DEINE_GERAETE_ID          # z.B. 152832118159141 (siehe README, Schritt "Geräte-ID finden")
+  account: !secret midea_account
+  password: !secret midea_password
+  poll_interval: 300                    # Sekunden zwischen Cloud-Abfragen
+  power_entity: input_boolean.comfee_lufter_betrieb
+  target_humidity_entity: input_number.comfee_lufter_zielfeuchte
+  fan_entity: input_number.comfee_lufter_stufe
+  mode_entity: input_select.comfee_lufter_modus
